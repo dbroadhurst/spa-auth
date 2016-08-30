@@ -1,0 +1,34 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.register .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  margin: 32px 0;
+  padding: 32px 0;
+}
+
+.register h3 {
+  margin: 16px 0;
+}
+
+.register .button {
+  margin: 16px 0;
+}
+
+.register .error {
+  margin: 16px 0;
+  color: orange;
+}
+
+.landing .register .logo {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+}

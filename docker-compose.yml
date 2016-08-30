@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+
+  mongo:
+    build: mongo/
+    ports:
+     - "27017:27017"
+    volumes:
+     - ./mongodb:/data/db
+
+  auth:
+    build: auth/
+    depends_on:
+     - mongo
+    command: bash /usr/src/start
+    ports:
+     - "3000:3000"
+    volumes:
+     - ./auth:/usr/src
+    environment:
+      - AUTH_SECRET=MySecret
+      - AUTH_SMTP_EMAIL=MyEmail
+      - AUTH_SMTP_PASSWORD=MyPassword
+      - AUTH_SMTP_HOST=MyHost
+      - PORT=3000
+
+#  admin:
+#    build: admin/
+#    depends_on:
+#      - auth
+#    command: bash /usr/src/start
+#    ports:
+#      - "8080:8080"
+#    volumes:
+#      - ./admin:/usr/src
+#    environment:
+#      - PORT=8080

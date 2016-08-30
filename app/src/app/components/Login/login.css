@@ -1,0 +1,33 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+  margin: 32px 0;
+  padding: 32px 0;
+}
+
+.login h3 {
+  margin: 16px 0;
+}
+
+.login .button {
+  margin: 16px 0;
+}
+
+.login .error {
+  margin: 16px 0;
+  color: orange;
+}
+
+.landing .login .logo {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 16px;
+}
