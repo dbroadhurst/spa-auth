@@ -1,5 +1,5 @@
 import React from 'react';
-import {hashHistory} from 'react-router'
+import {hashHistory} from 'react-router';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -60,9 +60,9 @@ class Recover extends React.Component {
   onChange(values) {
     this.values = values;
     if (values && values.email) {
-      this.enableButton()
+      this.enableButton();
     } else {
-      this.disableButton()
+      this.disableButton();
     }
   }
 
@@ -120,7 +120,7 @@ class Recover extends React.Component {
 
         </Paper>
       </div>
-    )
+    );
   }
 }
 

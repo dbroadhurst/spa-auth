@@ -17,5 +17,5 @@ export const users = () => {
         });
         return err;
       });
-  }
+  };
 };

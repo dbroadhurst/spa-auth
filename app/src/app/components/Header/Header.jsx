@@ -14,7 +14,7 @@ import {auth} from '../../actions';
 
 import Trianglify from 'trianglify';
 
-import './header.css'
+import './header.css';
 class Header extends React.Component {
 
   constructor(props) {
@@ -99,7 +99,7 @@ const mapStateToProps = (state) => {
     toolbar: {
       display: state.toolbar.display
     }
-  }
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {
@@ -111,4 +111,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps)
-(Header)
+(Header);

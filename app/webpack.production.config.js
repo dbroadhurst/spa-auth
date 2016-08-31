@@ -53,7 +53,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './index.ejs',
-      title: 'SPA Auth'
+      title: 'Bugle'
     })
   ],
   postcss: function () {

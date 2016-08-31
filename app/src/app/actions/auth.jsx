@@ -18,7 +18,7 @@ export const auth = () => {
 
         return Promise.reject(err);
       });
-  }
+  };
 };
 
 export const me = () => {
@@ -30,8 +30,8 @@ export const me = () => {
           info: res
         });
         return res;
-      })
-  }
+      });
+  };
 };
 
 export const authRegister = (payload) => {
@@ -43,7 +43,7 @@ export const authRegister = (payload) => {
       .catch((err) => {
         return Promise.reject(err);
       });
-  }
+  };
 };
 
 export const authLogin = (payload) => {
@@ -56,7 +56,7 @@ export const authLogin = (payload) => {
       .catch((err) => {
         return Promise.reject(err);
       });
-  }
+  };
 };
 
 export const authSendPassword = (payload) => {
@@ -68,5 +68,5 @@ export const authSendPassword = (payload) => {
       .catch((err) => {
         return Promise.reject(err);
       });
-  }
+  };
 };

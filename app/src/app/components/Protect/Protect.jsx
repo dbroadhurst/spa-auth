@@ -1,5 +1,5 @@
 import React from 'react';
-import {hashHistory} from 'react-router'
+import {hashHistory} from 'react-router';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
@@ -15,7 +15,7 @@ class Protect extends React.Component {
     this.props.auth()
       .catch((err)=> {
         hashHistory.push('landing/login');
-      })
+      });
   }
 
   render() {

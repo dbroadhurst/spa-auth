@@ -22,9 +22,9 @@ class Users extends React.Component {
             <TableRowColumn>{user.email}</TableRowColumn>
             <TableRowColumn>{user.username}</TableRowColumn>
           </TableRow>
-        )
+        );
       }
-    )
+    );
   }
 
   render() {
@@ -51,7 +51,7 @@ class Users extends React.Component {
 const mapStateToProps = (state) => {
   return {
     info: state.users
-  }
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {

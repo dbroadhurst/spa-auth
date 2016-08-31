@@ -1,5 +1,5 @@
 import React from 'react';
-import {hashHistory} from 'react-router'
+import {hashHistory} from 'react-router';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -38,7 +38,7 @@ class Landing extends React.Component {
 
         </div>
       </div>
-    )
+    );
   }
 }
 

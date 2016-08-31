@@ -26,7 +26,7 @@ class Me extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  return {info: state.auth.info}
+  return {info: state.auth.info};
 };
 
 const mapDispatchToProps = (dispatch) => {

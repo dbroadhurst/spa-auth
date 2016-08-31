@@ -41,6 +41,6 @@ export default class LoadImage extends React.Component {
       <div className={this.props.className} style={style}>
         {this.props.children}
       </div>
-    )
+    );
   }
 }

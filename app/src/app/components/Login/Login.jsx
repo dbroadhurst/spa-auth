@@ -1,5 +1,5 @@
 import React from 'react';
-import {hashHistory} from 'react-router'
+import {hashHistory} from 'react-router';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -62,9 +62,9 @@ class Login extends React.Component {
   onChange(values) {
     this.values = values;
     if (values && values.email && values.password) {
-      this.enableButton()
+      this.enableButton();
     } else {
-      this.disableButton()
+      this.disableButton();
     }
   }
 
@@ -136,7 +136,7 @@ class Login extends React.Component {
 
         </Paper>
       </div>
-    )
+    );
   }
 }
 

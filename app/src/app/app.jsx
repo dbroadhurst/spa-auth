@@ -30,7 +30,7 @@ var store = createStore(
 
 //components
 import {Landing, Explore} from './routes';
-import {Header, Login, Register, SendPassword, Protect} from './components'
+import {Header, Login, Register, SendPassword, Protect} from './components';
 
 //theme
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
